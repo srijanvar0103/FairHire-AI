@@ -37,15 +37,30 @@ Skill Detection using keyword matching
 Score Calculation
 Decision Output (Shortlisted / Rejected)
 
+
+
 🧠 Key Features
-📄 PDF Resume Upload & Processing
-🧹 Bias Removal Simulation
-🧠 Skill-Based Evaluation
-📊 Transparent Scoring System
-✅ Shortlisting Recommendation
-🎨 Modern Web Interface (Flask-based)
-🛠️ Tech Stack
-Backend: Python, Flask
-PDF Processing: PyPDF2
-Frontend: HTML, CSS
-Logic: Basic NLP / Rule-based AI
+
+   📄 PDF Resume Upload & Processing
+   
+   🧹 Bias Removal Simulation
+   
+   🧠 Skill-Based Evaluation
+   
+   📊 Transparent Scoring System
+   
+   ✅ Shortlisting Recommendation
+   
+   🎨 Modern Web Interface (Flask-based)
+
+
+
+🛠️ Tech Stack 
+
+    Backend: Python, Flask
+    
+    PDF Processing: PyPDF2
+    
+    Frontend: HTML, CSS
+    
+    Logic: Basic NLP / Rule-based AI
