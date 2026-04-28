@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FairHire AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 FairHire AI</h1>
+    <p class="subtitle">Unbiased Recruitment System</p>
+
+    <div class="card">
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="resume" accept=".pdf" required>
+            <button type="submit">Upload & Analyze</button>
+        </form>
+    </div>
+
+    {% if score is not none %}
+    <div class="card result">
+        <h2>Candidate Score: {{ score }}</h2>
+
+        {% if score >= 20 %}
+            <p class="status success">✅ Shortlisted</p>
+        {% else %}
+            <p class="status reject">❌ Not Shortlisted</p>
+        {% endif %}
+
+        <h3>Skills Detected:</h3>
+        <div class="skills">
+            {% for s in skills %}
+                <span class="skill">{{ s }}</span>
+            {% endfor %}
+        </div>
+
+        {% if preview %}
+        <h3>Resume Preview:</h3>
+        <div class="preview">{{ preview }}</div>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
